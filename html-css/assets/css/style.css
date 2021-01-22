@@ -1,0 +1,227 @@
+.container{
+    /* display: flex; */
+}
+.header{
+    display: flex;
+    background-image: url(../image/background.jpg) ;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    background-position: center;
+    /* background-size: 100%; */
+}
+.header__navbar{
+    display: flex;
+}
+.header__navbar-list{
+    font-size: 1.3rem;
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    /* justify-content: space-around; */
+    /* margin-left: 25px; */
+    /* margin-left: 10px; */
+    /* left: 0px; */
+}
+.header__navbar-item{
+    margin-left: 40px;
+    position: relative;
+    /* background-color: black; */
+    height: 25px;
+}
+.header__navbar-item-divider{
+    border-left: 1.5px solid rgba(0,0,0,0.1);
+    height: 24px;
+    vertical-align: middle;
+    position: relative;
+    margin: 0 10.5px;
+}
+.header__logo{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+/* .header__logo-img{
+height: 40px;
+width: 120px;
+margin-left: 88px;
+} */
+/* .header__navbar-item-icon-search */
+.header-button{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: #FFB300;
+    border-radius: 2px;
+    margin-top: 17px;
+}
+.content__countries-image{
+    border-radius:50%;
+-moz-border-radius:50%;
+-webkit-border-radius:50%;
+width: 200px;
+height: 200px;
+margin-left: 15px;
+}
+.fas.fa-search{
+    margin: auto;
+}
+.header__navbar-item-link{
+    text-decoration: none;
+    color: var(--black-color);
+}
+.header__navbar-item:hover .tourlist{
+    display: flex;
+    justify-content: space-around;
+    color: cadetblue;
+    
+}
+.tourlist{
+    display: flex;
+    position: absolute;
+    width: 520px;
+    height: 180px;
+    /* top: 100%; */
+    background-color:#fff;
+    border-radius: 2px;
+    padding: 8px;
+    display: none;
+}
+
+/* content */
+.content__tittle{
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.content__countries-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.content__countries{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.display-left{
+    height: 25px;
+    border: white;
+
+}
+.display-right{
+    height: 25px;
+    border: white;
+}
+.content__countries-img {display:none;}
+/* footer */
+/* external css: flickity.css */
+
+/* * { box-sizing: border-box; } */
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+
+.tour-foreign{
+    margin-top: 80px;
+    background-image: url("../../assets/image/background-tour-foreign.jpg");
+    height: 620px;
+    background-size: 100%;
+}
+/* item foreign  */
+.tour-foreign__items{
+    display: flex;
+    justify-content: center;
+}
+.tour-foreign__item{
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    margin-left: 25px;
+  }
+.tour-foreign__item-image{
+    /* margin-left: 10px; */
+    display: block;
+    width: 300px;
+    height: auto;
+}
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 300px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    height: 120px;
+  }
+.tour-foreign__item:hover .overlay {
+    opacity: 1;
+  }
+
+.related__articles{
+    margin-top: 80px;
+    display: flex;
+    /* justify-content: space-around; */
+    text-align: center;
+
+}
+.related__articles-comment{
+    width: 50%;
+    /* text-align: center; */
+}
+.related__articles-Handbook{
+    width: 50%;
+}
+.footer__traver{
+    margin-top: 80px;
+    background-image: url("../../assets/image/background-footer2.jpg");
+    height: 400px;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #EEE;
+}
+/* demo */
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  /* width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell; */
+}
+
+.carousel-cell.is-selected {
+  /* background: #ED2; */
+}
+
+/* cell number */
+.carousel-cell:before {
+  /* display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white; */
+}
